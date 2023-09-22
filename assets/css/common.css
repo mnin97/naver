@@ -1,0 +1,43 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+  }
+
+  .inner {
+    position: relative;
+    max-width: 1408px;
+    /* min-width: 1230px; */
+    padding: 0 104px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+
+
+  /* 작은 pc 랩탑 [[[[[  1025를보고 잡음  ]]]]]]*/
+@media (max-width:1230px) {
+  
+}
+
+/* 테블릿 [[[[[     768를보고 잡음   ]]]]]]*/
+@media (max-width:1024px) {
+
+    .inner {
+        padding: 0 50px;
+      }
+
+  
+}
+
+/* 모바일 [[[[[    320를보고 잡음     ]]]]]]*/
+@media (max-width:767px) {
+
+    .inner {
+        padding: 0 22px;
+      }
+  
+}

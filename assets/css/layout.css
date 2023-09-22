@@ -1,0 +1,500 @@
+@import "./font.css";
+@import "./reset.css";
+@import "./common.css";
+
+.container {
+  margin-top: 64px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+}
+header.on::before {
+  content: "";
+  height: 182px;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+}
+
+header .header-inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 64px;
+  padding: 0 104px 0 98px;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo a {
+  font-size: 28px;
+  display: block;
+  background-position: -105px 0px;
+  width: 223px;
+  height: 35px;
+  background-image: url("https://recruit.navercorp.com/share/tmplat/naver/img/sp_pc.png");
+  background-size: 328px 205px;
+}
+
+header .nav-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 29px;
+  height: 100%;
+}
+header .nav-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header .nav-list li a {
+  display: block;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+
+header .nav-list li a span:hover {
+  border-bottom: 1px solid #000;
+}
+header .nav-list li a span {
+  position: relative;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+
+header .sub-hover {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+header .sub-hover.on {
+  display: block;
+}
+
+header .sub-hover .sub-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 182px;
+  white-space: nowrap;
+}
+
+header .sub-hover .sub-item {
+}
+header .sub-hover .sub-item .link-more {
+  display: block;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+header .sub-hover .sub-item .link-more .text {
+  position: relative;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+
+header .sub-hover .sub-item .link-more .text:hover {
+  border-bottom: 1px solid #000;
+}
+
+header .right-nav-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 29px;
+  align-items: center;
+  margin-left: auto;
+}
+header .right-nav-list li {
+}
+header .right-nav-list li a {
+  display: block;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+header .right-nav-list li a span {
+  position: relative;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+
+header .right-nav-list li a .item:hover {
+  border-bottom: 1px solid #000;
+}
+
+header .right-nav-list .language-zone {
+}
+header .right-nav-list .language-zone a {
+}
+header .right-nav-list .language-zone a span {
+  font-size: 17px;
+}
+header .right-nav-list .language-zone a .arrow {
+  display: inline-block;
+  vertical-align: top;
+  margin: 13px 0 0 3px;
+  background-position: -122px -93px;
+  width: 10px;
+  height: 6px;
+  background-image: url("https://recruit.navercorp.com/share/tmplat/naver/img/sp_pc.png");
+  background-size: 328px 205px;
+}
+header .right-nav-list .language-zone a sapn .arrow {
+}
+header .right-nav-list .language-list {
+  display: none;
+}
+
+header .right-nav-list .language-list.on {
+  position: absolute;
+  background: #fff;
+  display: block;
+  padding: 0 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+header .right-nav-list .language-list.on a {
+}
+header .right-nav-list .language-list.on a span {
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+
+footer .footer-inner {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1920px;
+  padding: 25px 104px 25px 98px;
+  background-color: #f2f2f2;
+}
+footer .footer-logo {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  color: #000;
+}
+footer .footer-logo a {
+  display: block;
+}
+footer .policy {
+  margin-left: 30px;
+}
+footer .policy a {
+}
+footer .policy a span {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.28px;
+  color: #909090;
+}
+footer .relate-site {
+  position: relative;
+  margin-left: auto;
+}
+footer .relate-site .link-more {
+  position: relative;
+  width: 280px;
+  line-height: 42px;
+  text-align: left;
+  line-height: 42px;
+  text-align: left;
+}
+
+footer .relate-site .link-more.on {
+  padding: 0 12px;
+  background-color: #fff;
+}
+footer .relate-site .link-more.on::before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: 5px;
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 0;
+  background-position: -122px -93px;
+  width: 10px;
+  height: 6px;
+  z-index: 100;
+  background-image: url("	https://recruit.navercorp.com/share/tmplat/naver/img/sp_pc.png");
+  background-size: 328px 205px;
+}
+footer .relate-site .link-more.on::after {
+  content: none;
+}
+
+footer .relate-site .link-more::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 0;
+  background-position: -122px -93px;
+  width: 10px;
+  height: 6px;
+  z-index: 100;
+  background-image: url("	https://recruit.navercorp.com/share/tmplat/naver/img/sp_pc.png");
+  background-size: 328px 205px;
+}
+footer .relate-site .link-more::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #000;
+}
+/* footer .relate-site .site-list {
+  display: n;
+} */
+
+/* 다음과 같이 수정하십시오. */
+
+.site-list {
+  display: none;
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.site-list.on {
+  display: block;
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.site-list .related-list {
+}
+.site-list .related-list li {
+  font-size: 18px;
+  line-height: 42px;
+  padding: 0 12px;
+}
+
+.site-list .related-list li a {
+  display: block;
+}
+
+header .btn-menu,
+header .side-nav {
+  display: none;
+}
+
+.side-nav {
+}
+
+/* 작은 pc 랩탑 [[[[[  1025를보고 잡음  ]]]]]]*/
+@media (max-width: 1230px) {
+  .container {
+    margin-top: 60px;
+  }
+
+  header .header-inner {
+    padding: 0 22px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .gnb,
+  header .right-nav-list {
+    display: none;
+  }
+
+  header .logo a {
+    background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+    background-size: 195px 181px;
+    background-position: 0px 0px;
+    width: 160px;
+    height: 23px;
+  }
+
+  header .btn-menu {
+    display: block;
+    background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+    background-size: 195px 181px;
+    background-position: -85px -28px;
+    width: 20px;
+    height: 14px;
+  }
+  header .btn-menu.on {
+    background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+    background-position: -85px -49px;
+    width: 15px;
+    height: 15px;
+  }
+
+  header .side-nav {
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: #fff;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  header .side-nav.on {
+    visibility: visible;
+    transform: translateX(0);
+    overflow-y: scroll;
+  }
+
+  header .side-nav .list-nav {
+    position: relative;
+    padding: 11px 0 9px;
+  }
+  .header .list-nav + .list-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px;
+    right: 22px;
+    height: 1px;
+    background-color: #d0d0d0;
+  }
+
+  header .side-nav .list-nav .list-item {
+    font-size: 22px;
+    line-height: 46px;
+    letter-spacing: -0.44px;
+  }
+
+  header .side-nav .list-nav .list-item.on {
+  }
+  header .side-nav .list-nav .list-item.on .arrow {
+    transform: rotate(-180deg);
+  }
+  header .side-nav .list-nav .list-item.on {
+    background: #f2f2f2;
+  }
+
+  header .side-nav .sub-list {
+    display: none;
+  }
+  header .side-nav .sub-list.on {
+    display: block;
+  }
+
+  header .side-nav .sub-list {
+    padding: 3px 22px 15px;
+  }
+  header .side-nav .sub-item {
+    margin-top: 13px;
+  }
+  header .side-nav .sub-item a {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.36px;
+    background: #fff;
+    font-weight: normal;
+  }
+
+  header .side-nav .list-nav .list-item .arrow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 0 4px;
+    background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+    background-size: 195px 181px;
+    background-position: -136px -49px;
+    width: 10px;
+    height: 6px;
+  }
+  header .side-nav .list-nav .list-item a {
+    padding: 0 22px;
+  }
+
+  header .side-nav .language-list {
+    position: relative;
+    padding-top: 19px;
+  }
+  header .side-nav .language-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px;
+    right: 22px;
+    height: 1px;
+    background-color: #d0d0d0;
+  }
+  header .side-nav .language-list .item {
+    margin-bottom: 9px;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    line-height: 28px;
+  }
+  header .side-nav .language-list .item a {
+    padding: 0 22px;
+  }
+  header .side-nav .language-list .item .text {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    line-height: 28px;
+  }
+  header .side-nav .language-list .item .text::before {
+    content: "";
+    margin: 8px 10px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #d0d0d0;
+  }
+  header .side-nav .language-list .item.on .text::before {
+    background-color: #000;
+    border: 1px solid #fff;
+  }
+
+  /* 테블릿 [[[[[     768를보고 잡음   ]]]]]]*/
+  @media (max-width: 1024px) {
+    footer .footer-inner {
+      padding: 25px 22px 25px 22px;
+    }
+  }
+
+  /* 모바일 [[[[[    320를보고 잡음     ]]]]]]*/
+  @media (max-width: 767px) {
+    footer .footer-inner {
+      display: block;
+    }
+  }
+}
